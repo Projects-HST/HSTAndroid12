@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "36287041627",
+    "project_id": "koodaishopapp",
+    "storage_bucket": "koodaishopapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36287041627:android:a682e457d3e101a9eb2f7e",
+        "android_client_info": {
+          "package_name": "com.hst.osa_koodaiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36287041627-j3546ovpbhh8mpmeb9k3nqgmbdd8tc70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hst.osa_koodaiapp",
+            "certificate_hash": "c892be5d3e85556fc1e3af637479ec7dd24e96fa"
+          }
+        },
+        {
+          "client_id": "36287041627-j6p67mcddv9ku44edklmdsc8t6f6b2c9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hst.osa_koodaiapp",
+            "certificate_hash": "83123ff7d5aec11df606b92d1f1538aabcd20ce8"
+          }
+        },
+        {
+          "client_id": "36287041627-nvgt9m0eom2odoo213fh95e3o2je73kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRBeIGej-NZDDQUGVH02DHJGihGlG1BtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36287041627-nvgt9m0eom2odoo213fh95e3o2je73kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
