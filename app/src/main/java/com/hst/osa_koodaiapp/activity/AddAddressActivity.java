@@ -68,6 +68,7 @@ public class AddAddressActivity extends AppCompatActivity implements IServiceLis
 
     private TextView location, save;
     private TextInputEditText cus_name, cus_mobile, address1, address2, area, state, pinCode;
+    //
 
     private ArrayList<String> permissionsToRequest;
     private ArrayList<String> permissionsRejected = new ArrayList<>();
