@@ -141,7 +141,7 @@
 
                 </RelativeLayout>
 
-                <com.hst.osa_lilamore.customview.AViewFlipper
+                <com.hst.osa_koodaiapp.customview.AViewFlipper
                     android:id="@+id/view_flipper"
                     android:layout_width="match_parent"
                     android:layout_height="420dp"

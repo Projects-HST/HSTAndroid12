@@ -227,16 +227,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //            mSelectedLoginMode = OSAConstants.FACEBOOK;
             facebookLogin();
         }
-//        if (v == txtUseEmail) {
-//            loginMethod = "email";
-//            layoutEmail.setVisibility(View.VISIBLE);
-//            layoutNumber.setVisibility(View.GONE);
-//        }
-//        if (v == txtUseNumber) {
-//            loginMethod = "number";
-//            layoutEmail.setVisibility(View.GONE);
-//            layoutNumber.setVisibility(View.VISIBLE);
-//        }
+        if (v == txtUseEmail) {
+            loginMethod = "email";
+            layoutEmail.setVisibility(View.VISIBLE);
+            layoutNumber.setVisibility(View.GONE);
+        }
+        if (v == txtUseNumber) {
+            loginMethod = "number";
+            layoutEmail.setVisibility(View.GONE);
+            layoutNumber.setVisibility(View.VISIBLE);
+        }
         if (v == txtSignUp) {
             Intent i = new Intent(getApplicationContext(), SignupActivity.class);
             i.putExtra("page", page);

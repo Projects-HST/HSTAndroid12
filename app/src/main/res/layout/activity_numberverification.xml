@@ -82,7 +82,7 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <com.hst.osa_lilamore.customview.CustomOtpEditText
+                    <com.hst.osa_koodaiapp.customview.CustomOtpEditText
                         android:id="@+id/otp_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
