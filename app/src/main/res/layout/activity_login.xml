@@ -64,9 +64,8 @@
                         android:textSize="15sp" />
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
                         android:id="@+id/layout_number"
-                        android:visibility="gone"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -77,10 +76,10 @@
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="40dp"
                             android:layout_marginBottom="10dp"
-                            android:hint="@string/mobile"
                             android:fontFamily="@font/regular"
-                            app:boxStrokeColor="@color/lite_grey"
+                            android:hint="@string/mobile"
                             android:textSize="16sp"
+                            app:boxStrokeColor="@color/lite_grey"
                             app:hintTextColor="@color/text_black"
                             app:prefixText="+91">
 
@@ -88,8 +87,8 @@
                                 android:id="@+id/txt_mobile_number"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="number"
                                 android:fontFamily="@font/regular"
+                                android:inputType="number"
                                 android:maxLength="10"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
@@ -113,7 +112,8 @@
                     <RelativeLayout
                         android:id="@+id/layout_email"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/ti_email"
@@ -121,8 +121,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:fontFamily="@font/regular"
                             android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/regular"
                             android:hint="@string/mail"
                             app:boxStrokeColor="@color/lite_grey"
                             app:hintTextColor="@color/text_black">
@@ -143,21 +143,21 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/regular"
+                            android:layout_below="@+id/ti_email"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/regular"
                             android:hint="@string/password"
-                            android:layout_below="@+id/ti_email"
-                            app:passwordToggleEnabled="true"
                             app:boxStrokeColor="@color/lite_grey"
-                            app:hintTextColor="@color/text_black">
+                            app:hintTextColor="@color/text_black"
+                            app:passwordToggleEnabled="true">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/txt_password"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="textPassword"
                                 android:fontFamily="@font/regular"
+                                android:inputType="textPassword"
                                 android:maxLength="30"
                                 android:textColor="@color/grey"
                                 android:textSize="14sp" />
@@ -178,29 +178,29 @@
 
 
                     <TextView
-                            android:id="@+id/btn_login"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_below="@id/mail_login"
-                            android:layout_marginHorizontal="20dp"
-                            android:layout_marginTop="40dp"
-                            android:fontFamily="@font/semibold"
-                            android:gravity="center"
-                            android:background="@drawable/btn_bg"
-                            android:text="@string/signIn"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/mail_login"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="@font/semibold"
+                        android:gravity="center"
+                        android:text="@string/signIn"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
                     <View
                         android:id="@+id/line_sign"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/line_product"
                         android:layout_marginStart="50dp"
-                        android:visibility="gone"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_marginTop="20dp"/>
+                        android:background="@color/line_product"
+                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/ph_login"
@@ -208,103 +208,102 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ti_password"
                         android:layout_alignParentEnd="true"
-                        android:visibility="gone"
                         android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/regular"
                         android:layout_marginTop="20dp"
+                        android:fontFamily="@font/regular"
                         android:text="@string/phone"
                         android:textColor="@color/text_black"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:visibility="gone" />
 
 
                     <TextView
-                            android:id="@+id/or"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/btn_login"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginVertical="20dp"
-                            android:fontFamily="@font/semibold"
-                            android:text="@string/or"
-                            android:textColor="@color/text_black"
-                            android:textSize="14sp" />
+                        android:id="@+id/or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_login"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="20dp"
+                        android:fontFamily="@font/semibold"
+                        android:text="@string/or"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp" />
 
-                        <RelativeLayout
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/or"
+                        android:layout_marginHorizontal="40dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/btn_gg_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="@drawable/ek_btn_google_color"
+                            android:drawablePadding="4dp"
+                            android:fontFamily="@font/regular"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/ggLogIn"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:drawableStartCompat="@drawable/ic_search__1_" />
+
+                        <TextView
+                            android:id="@+id/btn_fb_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/btn_gg_login"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/btn_hf_rd_color_2"
+                            android:drawablePadding="15dp"
+                            android:fontFamily="@font/regular"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="@string/fbLogIn"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:drawableStartCompat="@drawable/ic_facebook__2_" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/or"
-                            android:layout_marginHorizontal="40dp"
-                            android:gravity="center">
+                            android:layout_below="@id/btn_fb_login"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/btn_gg_login"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginHorizontal="20dp"
-                                android:background="@drawable/btn_half_round_color"
-                                android:drawablePadding="4dp"
-                                android:fontFamily="@font/regular"
-                                android:gravity="center"
-                                android:paddingHorizontal="20dp"
-                                android:text="@string/ggLogIn"
-                                android:textAllCaps="false"
-                                android:textColor="@color/lite_blue"
-                                android:textSize="14sp"
-                                app:drawableStartCompat="@drawable/ic_search__1_" />
-
-                            <TextView
-                                android:id="@+id/btn_fb_login"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_below="@id/btn_gg_login"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginHorizontal="20dp"
-                                android:layout_marginVertical="20dp"
-                                android:background="@drawable/btn_hf_rd_color_2"
-                                android:drawablePadding="15dp"
-                                android:fontFamily="@font/regular"
-                                android:gravity="center"
-                                android:paddingHorizontal="20dp"
-                                android:visibility="gone"
-                                android:text="@string/fbLogIn"
-                                android:textAllCaps="false"
-                                android:textColor="@color/blue"
-                                android:textSize="14sp"
-                                app:drawableStartCompat="@drawable/ic_facebook__2_" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                                android:id="@+id/tryLog"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="20dp"
-                                android:gravity="center"
-                                android:layout_below="@id/btn_fb_login"
-                                android:orientation="horizontal">
+                                android:fontFamily="@font/regular"
+                                android:text="@string/create"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
 
-                                <TextView
-                                    android:id="@+id/tryLog"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/regular"
-                                    android:text="@string/create"
-                                    android:textColor="@color/text_black"
-                                    android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/txt_signUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold"
+                                android:paddingHorizontal="5dp"
+                                android:text="@string/signUp"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
 
-                                <TextView
-                                    android:id="@+id/txt_signUp"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/bold"
-                                    android:paddingHorizontal="5dp"
-                                    android:text="@string/signUp"
-                                    android:textColor="@color/text_black"
-                                    android:textSize="14sp" />
-
-                            </LinearLayout>
+                        </LinearLayout>
 
 
-
-                        </RelativeLayout>
+                    </RelativeLayout>
 
                 </LinearLayout>
 

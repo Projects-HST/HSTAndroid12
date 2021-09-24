@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,7 +21,6 @@ import com.hst.osa_koodaiapp.bean.support.AddressArrayList;
 import com.hst.osa_koodaiapp.bean.support.AddressList;
 import com.hst.osa_koodaiapp.bean.support.CartItem;
 import com.hst.osa_koodaiapp.bean.support.CartOrderList;
-import com.hst.osa_koodaiapp.bean.support.OrderHistory;
 import com.hst.osa_koodaiapp.ccavenue.activity.InitialScreenActivity;
 import com.hst.osa_koodaiapp.helpers.AlertDialogHelper;
 import com.hst.osa_koodaiapp.helpers.ProgressDialogHelper;
@@ -35,11 +36,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static android.util.Log.d;
-
 public class ReviewOrderActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, View.OnClickListener, ReviewOrderListAdapter.OnItemClickListener {
 
-    private static final String TAG = com.hst.osa_koodaiapp.activity.CheckoutActivity.class.getName();
+    private static final String TAG = ReviewOrderActivity.class.getName();
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
     private String resCheck = "";
@@ -262,7 +261,7 @@ public class ReviewOrderActivity extends AppCompatActivity implements IServiceLi
                 cashPayment();
             }
         } if (view == continueShopping) {
-            Intent homeIntent = new Intent(this, com.hst.osa_koodaiapp.activity.MainActivity.class);
+            Intent homeIntent = new Intent(this, MainActivity.class);
             homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(homeIntent);
             finish();

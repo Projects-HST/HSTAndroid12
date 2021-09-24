@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -31,11 +33,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static android.util.Log.d;
-
 public class NotificationActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, NotificationListAdapter.OnItemClickListener, View.OnClickListener {
 
-    public static final String TAG = ChangePasswordActivity.class.getName();
+    public static final String TAG = NotificationActivity.class.getName();
 
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;

@@ -12,7 +12,7 @@ public class FilterSizeList {
     private int count;
     @SerializedName("size_list")
     @Expose
-    private ArrayList<com.hst.osa_koodaiapp.bean.support.FilterSize> sizeArrayList = new ArrayList<>();
+    private ArrayList<FilterSize> sizeArrayList = new ArrayList<>();
 
     /**
      * @return The count
@@ -31,14 +31,14 @@ public class FilterSizeList {
     /**
      * @return The sizeArrayList
      */
-    public ArrayList<com.hst.osa_koodaiapp.bean.support.FilterSize> getSizeArrayList() {
+    public ArrayList<FilterSize> getSizeArrayList() {
         return sizeArrayList;
     }
 
     /**
      * @param sizeArrayList The sizeArrayList
      */
-    public void setSizeArrayList(ArrayList<com.hst.osa_koodaiapp.bean.support.FilterSize> sizeArrayList) {
+    public void setSizeArrayList(ArrayList<FilterSize> sizeArrayList) {
         this.sizeArrayList = sizeArrayList;
     }
 }

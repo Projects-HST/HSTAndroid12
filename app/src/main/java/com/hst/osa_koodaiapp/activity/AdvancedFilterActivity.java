@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,11 +39,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.util.Log.d;
-
 public class AdvancedFilterActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, FilterSizeListAdapter.OnItemClickListener, FilterColourListAdapter.OnItemClickListener, View.OnClickListener, SubCategoryListAdapter.OnItemClickListener {
 
-    private static final String TAG = com.hst.osa_koodaiapp.activity.ReplaceProductActivity.class.getName();
+    private static final String TAG = AdvancedFilterActivity.class.getName();
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
     private String resCheck = "";

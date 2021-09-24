@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,8 +35,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-import static android.util.Log.d;
 
 public class OrderHistoryDetailPage extends AppCompatActivity implements IServiceListener, DialogClickListener, View.OnClickListener, ReviewOrderListAdapter.OnItemClickListener, OrderHistoryDetailListAdapter.OnItemClickListener {
 
@@ -355,7 +355,7 @@ public class OrderHistoryDetailPage extends AppCompatActivity implements IServic
     }
 
     public void replaceProduct(int position) {
-        Intent intent = new Intent(this, com.hst.osa_koodaiapp.activity.ReplaceProductActivity.class);
+        Intent intent = new Intent(this, ReplaceProductActivity.class);
         intent.putExtra("prod", cartItemArrayList.get(position));
         startActivity(intent);
     }

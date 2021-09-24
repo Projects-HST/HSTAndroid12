@@ -1,8 +1,9 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -35,8 +36,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-import static android.util.Log.d;
 
 public class ShippingAddressActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, View.OnClickListener, AddressListAdapter.OnItemClickListener {
 
@@ -212,7 +211,7 @@ public class ShippingAddressActivity extends AppCompatActivity implements IServi
     public void onClick(View v) {
 
         if (v == add) {
-            Intent addInt = new Intent(this, com.hst.osa_koodaiapp.activity.AddAddressActivity.class);
+            Intent addInt = new Intent(this, AddAddressActivity.class);
             startActivity(addInt);
         }
 

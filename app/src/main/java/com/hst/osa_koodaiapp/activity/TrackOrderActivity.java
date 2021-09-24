@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,11 +35,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static android.util.Log.d;
-
 public class TrackOrderActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, OrderHistoryDetailListAdapter.OnItemClickListener, QuestionListAdapter.OnItemClickListener, View.OnClickListener, OrderStatusListAdapter.OnItemClickListener {
 
-    private static final String TAG = com.hst.osa_koodaiapp.activity.ReplaceProductActivity.class.getName();
+    private static final String TAG = TrackOrderActivity.class.getName();
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
     private String resCheck = "";

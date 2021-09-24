@@ -31,7 +31,7 @@
     <string name="email">Use Email ID</string>
     <string name="signIn">Continue</string>
     <string name="or">Or</string>
-    <string name="ggLogIn">Continue with Google</string>
+    <string name="ggLogIn">Sign in with Google</string>
     <string name="fbLogIn">Continue with Facebook</string>
     <string name="signUp">Sign Up</string>
     <string name="create">Don’t have an account?</string>

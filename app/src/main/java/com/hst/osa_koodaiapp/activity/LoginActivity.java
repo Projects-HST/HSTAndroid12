@@ -13,7 +13,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -37,7 +36,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -77,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 9001;
     private int mSelectedLoginMode = 0;
-    private String whichService = "", loginMethod = "email";
+    private String whichService = "", loginMethod = "number";
     private boolean isMobileLogin = true;
 
     private EditText txtNumber, txtEmail, txtPassword;
@@ -103,7 +101,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onClick(View v) {
                 if (page.equalsIgnoreCase("product")) {
-                    Intent i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+                    Intent i = new Intent(getApplicationContext(), ProductDetailActivity.class);
                     i.putExtra("page", "product");
                     i.putExtra("productObj", productID);
                     startActivity(i);
@@ -207,15 +205,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
 
         if (v == btnContinue) {
-//            if (loginMethod.equalsIgnoreCase("number")) {
-//                if (validateFields()) {
-//                    PreferenceStorage.saveMobileNo(this, txtNumber.getText().toString());
-//                    continueWithNumber();
-//                }
-//            } else {
-                if (validateFieldEmail()) {
-                    PreferenceStorage.saveEmail(this, txtEmail.getText().toString());
-                    continueWithEmail();
+            if (loginMethod.equalsIgnoreCase("number")) {
+                if (validateFields()) {
+                    PreferenceStorage.saveMobileNo(this, txtNumber.getText().toString());
+                    continueWithNumber();
+                }
+            } else if (validateFieldEmail()) {
+                PreferenceStorage.saveEmail(this, txtEmail.getText().toString());
+                continueWithEmail();
 //                }
             }
         }
@@ -241,7 +238,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //            layoutNumber.setVisibility(View.VISIBLE);
 //        }
         if (v == txtSignUp) {
-            Intent i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.SignupActivity.class);
+            Intent i = new Intent(getApplicationContext(), SignupActivity.class);
             i.putExtra("page", page);
             i.putExtra("product_id", productID);
             startActivity(i);
@@ -582,7 +579,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         progressDialogHelper.hideProgressDialog();
         if (validateResponse(response)) {
             if (whichService.equalsIgnoreCase("mobile")) {
-                Intent i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.NumberVerificationActivity.class);
+                Intent i = new Intent(getApplicationContext(), NumberVerificationActivity.class);
                 i.putExtra("page", page);
                 i.putExtra("productObj", productID);
                 startActivity(i);
@@ -610,11 +607,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 Intent i;
                 if (page.equalsIgnoreCase("product")) {
-                    i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+                    i = new Intent(getApplicationContext(), ProductDetailActivity.class);
                     i.putExtra("page", "product");
                     i.putExtra("productObj", productID);
                 } else {
-                    i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.MainActivity.class);
+                    i = new Intent(getApplicationContext(), MainActivity.class);
                 }
                 startActivity(i);
                 finish();
@@ -641,11 +638,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 Intent i;
                 if (page.equalsIgnoreCase("product")) {
-                    i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+                    i = new Intent(getApplicationContext(), ProductDetailActivity.class);
                     i.putExtra("page", "product");
                     i.putExtra("productObj", productID);
                 } else {
-                    i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.MainActivity.class);
+                    i = new Intent(getApplicationContext(), MainActivity.class);
                 }
                 startActivity(i);
                 finish();
@@ -674,11 +671,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 Intent homeIntent;
                 if (page.equalsIgnoreCase("product")) {
-                    homeIntent = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+                    homeIntent = new Intent(getApplicationContext(), ProductDetailActivity.class);
                     homeIntent.putExtra("page", "product");
                     homeIntent.putExtra("productObj", productID);
                 } else {
-                    homeIntent = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.MainActivity.class);
+                    homeIntent = new Intent(getApplicationContext(), MainActivity.class);
                     homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 ////                    homeIntent.putExtra("profile_state", "new");
                 }

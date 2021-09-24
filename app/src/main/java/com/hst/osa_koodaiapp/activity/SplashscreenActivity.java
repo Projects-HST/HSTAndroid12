@@ -18,18 +18,16 @@ import com.hst.osa_koodaiapp.utils.OSAValidator;
 import com.hst.osa_koodaiapp.utils.PreferenceStorage;
 
 public class SplashscreenActivity extends AppCompatActivity {
+
     private final String TAG = getClass().getSimpleName();
-    private static int SPLASH_TIME_OUT = 2000;
-    private static final int PERMISSION_REQUEST_CODE = 1;
     SQLiteHelper database;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splashscreen);
         database = new SQLiteHelper(getApplicationContext());
-//        appSignatureHelper = new AppSignatureHelper(this);
-//        appSignatureHelper.getAppSignatures();
         final int getStatus = database.appInfoCheck();
 
         new Handler().postDelayed(new Runnable() {
@@ -38,11 +36,11 @@ public class SplashscreenActivity extends AppCompatActivity {
                 Boolean b = PreferenceStorage.isFirstTimeLaunch(getApplicationContext());
                 String id = PreferenceStorage.getUserId(getApplicationContext());
                 if (getStatus != 0 && OSAValidator.checkNullString(id)) {
-                    Intent i = new Intent(SplashscreenActivity.this, com.hst.osa_koodaiapp.activity.AddAddressActivity.class);
+                    Intent i = new Intent(SplashscreenActivity.this, MainActivity.class);
                     startActivity(i);
                     finish();
                 } else {
-                    Intent i = new Intent(getApplicationContext(), AddAddressActivity.class);
+                    Intent i = new Intent(getApplicationContext(), WelcomeActivity.class);
                     FirebaseMessaging.getInstance().getToken()
                             .addOnCompleteListener(new OnCompleteListener<String>() {
                                 @Override
@@ -51,17 +49,15 @@ public class SplashscreenActivity extends AppCompatActivity {
                                         Log.w(TAG, "Fetching FCM registration token failed", task.getException());
                                         return;
                                     }
-                                    // Get new FCM registration token
                                     String token = task.getResult();
                                     PreferenceStorage.saveGCM(getApplicationContext(), token);
-                                    // Log and toast
                                 }
                             });
                     startActivity(i);
                     finish();
                 }
             }
-        }, SPLASH_TIME_OUT);
+        }, 2000);
 
     }
 

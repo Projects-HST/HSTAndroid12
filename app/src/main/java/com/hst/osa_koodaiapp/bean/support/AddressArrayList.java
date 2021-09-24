@@ -12,7 +12,7 @@ public class AddressArrayList {
     private int count;
     @SerializedName("address_list")
     @Expose
-    private ArrayList<com.hst.osa_koodaiapp.bean.support.AddressList> addressArrayList = new ArrayList<>();
+    private ArrayList<AddressList> addressArrayList = new ArrayList<>();
 
     public int getCount() {
         return count;
@@ -22,11 +22,11 @@ public class AddressArrayList {
         this.count = count;
     }
 
-    public ArrayList<com.hst.osa_koodaiapp.bean.support.AddressList> getAddressArrayList() {
+    public ArrayList<AddressList> getAddressArrayList() {
         return addressArrayList;
     }
 
-    public void setAddressArrayList(ArrayList<com.hst.osa_koodaiapp.bean.support.AddressList> addressArrayList) {
+    public void setAddressArrayList(ArrayList<AddressList> addressArrayList) {
         this.addressArrayList = addressArrayList;
     }
 }

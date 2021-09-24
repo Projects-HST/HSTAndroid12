@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,8 +31,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-import static android.util.Log.d;
 
 public class OrderHistoryActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, View.OnClickListener, OrderHistoryListAdapter.OnItemClickListener {
     private static final String TAG = OrderHistoryActivity.class.getName();
@@ -180,7 +180,7 @@ public class OrderHistoryActivity extends AppCompatActivity implements IServiceL
         OrderHistory orderHistory = null;
         orderHistory = orderHistoryArrayList.get(position);
         Intent intent;
-        intent = new Intent(this, com.hst.osa_koodaiapp.activity.OrderHistoryDetailPage.class);
+        intent = new Intent(this, OrderHistoryDetailPage.class);
         PreferenceStorage.saveOrderId(this, orderHistory.getorder_id());
         startActivity(intent);
     }

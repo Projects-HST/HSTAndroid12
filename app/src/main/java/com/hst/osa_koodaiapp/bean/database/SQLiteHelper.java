@@ -18,8 +18,8 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     public static final String TAG = "SQLiteHelper.java";
 
-    private static final String DATABASE_NAME = "osa.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NAME = "osa_koodaiapp.db";
+    private static final int DATABASE_VERSION = 2;
 
     private static final String table_create_remember_me = "Create table IF NOT EXISTS rememberMe(_id integer primary key autoincrement,"
             + "username text," //1

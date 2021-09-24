@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,11 +31,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static android.util.Log.d;
-
 public class AdvanceFilterResultActivity extends AppCompatActivity implements IServiceListener, DialogClickListener, View.OnClickListener, BestSellingListAdapter.OnItemClickListener {
 
-    private static final String TAG = com.hst.osa_koodaiapp.activity.ReplaceProductActivity.class.getName();
+    private static final String TAG = AdvanceFilterResultActivity.class.getName();
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
     private String resCheck = "";
@@ -186,7 +186,7 @@ public class AdvanceFilterResultActivity extends AppCompatActivity implements IS
         Product product = null;
         product = productArrayList.get(position);
         Intent intent;
-        intent = new Intent(this, com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+        intent = new Intent(this, ProductDetailActivity.class);
         intent.putExtra("page", "AdvFilter");
         intent.putExtra("productObj", product.getid());
         startActivity(intent);

@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -43,7 +45,6 @@ import com.hst.osa_koodaiapp.interfaces.OnBackPressedListener;
 import com.hst.osa_koodaiapp.servicehelpers.ServiceHelper;
 import com.hst.osa_koodaiapp.serviceinterfaces.IServiceListener;
 import com.hst.osa_koodaiapp.utils.OSAConstants;
-import com.hst.osa_koodaiapp.utils.OSAValidator;
 import com.hst.osa_koodaiapp.utils.PreferenceStorage;
 import com.squareup.picasso.Picasso;
 
@@ -51,8 +52,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-import static android.util.Log.d;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, OnBackPressedListener, IServiceListener, DialogClickListener, RecentSearchListAdapter.OnItemClickListener {
 
@@ -405,43 +404,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (view == sideProfile) {
             if (checkLogin()) {
-                Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.EditProfile.class);
+                Intent i = new Intent(this, EditProfile.class);
 //            i.putExtra("page", "editProfile");
                 startActivity(i);
             }
         }
         if (view == sideCat) {
-            Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.CategoryActivity.class);
+            Intent i = new Intent(this, CategoryActivity.class);
             startActivity(i);
 //            changePage(1);
         }
         if (view == sideWish) {
             if (checkLogin()) {
-                Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.WishListActivity.class);
+                Intent i = new Intent(this, WishListActivity.class);
                 startActivity(i);
             }
         }
         if (view == sideOrder) {
             if (checkLogin()) {
-                Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.OrderHistoryActivity.class);
+                Intent i = new Intent(this, OrderHistoryActivity.class);
                 startActivity(i);
             }
         }
         if (view == sideWallet) {
             if (checkLogin()) {
-                Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.WalletActivity.class);
+                Intent i = new Intent(this, WalletActivity.class);
                 startActivity(i);
             }
         }
         if (view == sideAddress) {
             if (checkLogin()) {
-                Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.ShippingAddressActivity.class);
+                Intent i = new Intent(this, ShippingAddressActivity.class);
                 i.putExtra("page", "shippingAddress");
                 startActivity(i);
             }
         }
         if (view == sideSettings) {
-            Intent i = new Intent(this, com.hst.osa_koodaiapp.activity.SettingsActivity.class);
+            Intent i = new Intent(this, SettingsActivity.class);
             startActivity(i);
         }
         if (view == sideLogout) {
@@ -555,7 +554,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                    recyclerViewPopularProduct.setLayoutManager(mLayoutManager);
 //                    recyclerViewPopularProduct.setAdapter(adasd);
 
-                    Intent intentSearch = new Intent(this, com.hst.osa_koodaiapp.activity.SearchResultActivity.class);
+                    Intent intentSearch = new Intent(this, SearchResultActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("searchObj", productArrayList);
                     intentSearch.putExtras(bundle);

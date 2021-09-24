@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -23,8 +25,6 @@ import com.hst.osa_koodaiapp.utils.PreferenceStorage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import static android.util.Log.d;
 
 public class ChangePasswordActivity extends AppCompatActivity implements IServiceListener, DialogClickListener {
 
@@ -163,7 +163,7 @@ public class ChangePasswordActivity extends AppCompatActivity implements IServic
                 changePassword();
             }
             if (reStr.equalsIgnoreCase("changePassword")) {
-                Intent homeInt = new Intent(this, com.hst.osa_koodaiapp.activity.MainActivity.class);
+                Intent homeInt = new Intent(this, MainActivity.class);
                 homeInt.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(homeInt);
                 finish();

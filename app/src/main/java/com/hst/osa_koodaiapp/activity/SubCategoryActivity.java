@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,12 +41,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static android.util.Log.d;
-
 public class SubCategoryActivity extends AppCompatActivity implements IServiceListener, SubCategoryListAdapter.OnItemClickListener,
         DialogClickListener, BestSellingListAdapter.OnItemClickListener, RecentSearchListAdapter.OnItemClickListener {
 
-    private static final String TAG = com.hst.osa_koodaiapp.activity.MainActivity.class.getName();
+    private static final String TAG = SubCategoryActivity.class.getName();
     private ServiceHelper serviceHelper;
     private ProgressDialogHelper progressDialogHelper;
 
@@ -148,7 +148,7 @@ public class SubCategoryActivity extends AppCompatActivity implements IServiceLi
         imgFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), com.hst.osa_koodaiapp.activity.AdvancedFilterActivity.class);
+                Intent i = new Intent(getApplicationContext(), AdvancedFilterActivity.class);
                 i.putExtra("categoryObj", catId);
                 startActivity(i);
             }
@@ -257,7 +257,7 @@ public class SubCategoryActivity extends AppCompatActivity implements IServiceLi
                     productList = gson.fromJson(response.toString(), SubProductList.class);
                     productArrayList.addAll(productList.getProductArrayList());
 
-                    Intent intentSearch = new Intent(this, com.hst.osa_koodaiapp.activity.SearchResultActivity.class);
+                    Intent intentSearch = new Intent(this, SearchResultActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("searchObj", productArrayList);
                     intentSearch.putExtras(bundle);
@@ -363,7 +363,7 @@ public class SubCategoryActivity extends AppCompatActivity implements IServiceLi
 
         Product product = null;
         product = productArrayList.get(position);
-        Intent detailInt = new Intent(this, com.hst.osa_koodaiapp.activity.ProductDetailActivity.class);
+        Intent detailInt = new Intent(this, ProductDetailActivity.class);
         detailInt.putExtra("page", "product");
         detailInt.putExtra("productObj", product.getid());
         startActivity(detailInt);

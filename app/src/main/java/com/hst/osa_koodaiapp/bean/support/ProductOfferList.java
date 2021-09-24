@@ -12,7 +12,7 @@ public class ProductOfferList {
     private int count;
     @SerializedName("offer_list")
     @Expose
-    private ArrayList<com.hst.osa_koodaiapp.bean.support.ProductOffer> productArrayList = new ArrayList<>();
+    private ArrayList<ProductOffer> productArrayList = new ArrayList<>();
 
     /**
      * @return The count
@@ -31,14 +31,14 @@ public class ProductOfferList {
     /**
      * @return The popularProductArrayList
      */
-    public ArrayList<com.hst.osa_koodaiapp.bean.support.ProductOffer> getProductArrayList() {
+    public ArrayList<ProductOffer> getProductArrayList() {
         return productArrayList;
     }
 
     /**
      * @param productArrayList The popularProductArrayList
      */
-    public void setProductArrayList(ArrayList<com.hst.osa_koodaiapp.bean.support.ProductOffer> productArrayList) {
+    public void setProductArrayList(ArrayList<ProductOffer> productArrayList) {
         this.productArrayList = productArrayList;
     }
 }

@@ -12,7 +12,7 @@ public class AdvertisementList {
     private int count;
     @SerializedName("data")
     @Expose
-    private ArrayList<com.hst.osa_koodaiapp.bean.support.Advertisement> advertisementArrayList = new ArrayList<>();
+    private ArrayList<Advertisement> advertisementArrayList = new ArrayList<>();
 
     /**
      * @return The count
@@ -31,14 +31,14 @@ public class AdvertisementList {
     /**
      * @return The advertisementArrayList
      */
-    public ArrayList<com.hst.osa_koodaiapp.bean.support.Advertisement> getAdvertisementArrayList() {
+    public ArrayList<Advertisement> getAdvertisementArrayList() {
         return advertisementArrayList;
     }
 
     /**
      * @param advertisementArrayList The advertisementArrayList
      */
-    public void setAdvertisementArrayList(ArrayList<com.hst.osa_koodaiapp.bean.support.Advertisement> advertisementArrayList) {
+    public void setAdvertisementArrayList(ArrayList<Advertisement> advertisementArrayList) {
         this.advertisementArrayList = advertisementArrayList;
     }
 }
