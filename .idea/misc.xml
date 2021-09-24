@@ -99,10 +99,65 @@
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_add_address.xml" value="0.1" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_advanced_filter.xml" value="0.1816123188405797" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_advanced_filter_result.xml" value="0.1816123188405797" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_cart.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_category.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_change_password.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_checkout.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.17708333333333334" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_email_login.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_initial_screen.xml" value="0.1" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_login_test.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_notification.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_numberverification.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_order_history.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_order_history_detail.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_password.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_product_detail.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_product_replace.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_review_order.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_sample_edit_profile.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_search_result.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_shipping_address.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_splashscreen.xml" value="0.1816123188405797" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_status.xml" value="0.1" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_sub_category.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_track_order.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_wallet.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_wallet_add_money.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_webview.xml" value="0.17708333333333334" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/activity_wishlist.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/fragment_best_selling.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/fragment_category.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_address.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_advertisement.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_cart.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_category.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_colour.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_grid_product.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_horizontal_category.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_new_arrivals.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_order_history.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_order_history_detail.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_order_status.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_question.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_review.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_review_order.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_size.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_item_wallet.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_notification_items.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_recent_items.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/list_sub_cat.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/mail_status.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/nav_full_header.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/nav_header_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/layout/otp_edittext.xml" value="0.17708333333333334" />
         <entry key="..\:/HappySanzTech/AppWorkSpace/OSA_KoodaiApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
       </map>
     </option>
