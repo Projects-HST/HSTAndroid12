@@ -48,7 +48,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     private CustomOtpEditText otpEditText;
     private TextInputLayout tiName, tiNumber, tiEmail, tiPassword;
-    private Button btnConfirm;
+    private TextView btnConfirm;
     private TextView btnChangeNumber;
     private String mobileNo;
     private String checkVerify;
@@ -84,7 +84,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         txtPassword = findViewById(R.id.txt_password);
 
 
-        btnConfirm = (Button) findViewById(R.id.btn_signup);
+        btnConfirm = findViewById(R.id.btn_signup);
         btnConfirm.setOnClickListener(this);
 
         serviceHelper = new ServiceHelper(this);

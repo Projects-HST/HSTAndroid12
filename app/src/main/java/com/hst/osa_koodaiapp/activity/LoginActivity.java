@@ -231,11 +231,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             loginMethod = "email";
             layoutEmail.setVisibility(View.VISIBLE);
             layoutNumber.setVisibility(View.GONE);
+            txtUseNumber.setVisibility(View.VISIBLE);
         }
         if (v == txtUseNumber) {
             loginMethod = "number";
             layoutEmail.setVisibility(View.GONE);
             layoutNumber.setVisibility(View.VISIBLE);
+            txtUseNumber.setVisibility(View.GONE);
         }
         if (v == txtSignUp) {
             Intent i = new Intent(getApplicationContext(), SignupActivity.class);
