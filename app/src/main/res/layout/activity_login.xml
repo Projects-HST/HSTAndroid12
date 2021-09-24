@@ -250,7 +250,7 @@
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             android:textSize="14sp"
-                            app:drawableStartCompat="@drawable/ic_search__1_" />
+                            app:drawableStartCompat="@drawable/ic_google_icon" />
 
                         <TextView
                             android:id="@+id/btn_fb_login"

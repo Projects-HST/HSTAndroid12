@@ -131,6 +131,7 @@ public class OSAConstants {
     public static final String PARAMS_MOBILE_TYPE = "mobile_type";
     public static final String PARAMS_GCM_KEY = "mob_key";
     public static final String PARAMS_MOBILE_NUMBER = "mobile_number";
+    public static final String PARAMS_MOBILE_PHONE = "phone";
     public static final String PARAMS_OTP = "OTP";
     public static final String PARAMS_LOGIN_PORTAL = "login_portal";
     public static final String PARAMS_EMAIL = "email";

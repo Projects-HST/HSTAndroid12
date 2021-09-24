@@ -1,5 +1,7 @@
 package com.hst.osa_koodaiapp.activity;
 
+import static android.util.Log.d;
+
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,8 +41,6 @@ import org.json.JSONObject;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static android.util.Log.d;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener, IServiceListener, DialogClickListener {
     private static final String TAG = SignupActivity.class.getName();
@@ -110,7 +109,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                      JSONObject jsonObject = new JSONObject();
                      try {
                          jsonObject.put(OSAConstants.KEY_NAME, txtName.getText().toString());
-                         jsonObject.put(OSAConstants.PARAMS_MOBILE_NUMBER, txtNumber.getText().toString());
+                         jsonObject.put(OSAConstants.PARAMS_MOBILE_PHONE, txtNumber.getText().toString());
                          jsonObject.put(OSAConstants.PARAMS_EMAIL, txtEmail.getText().toString());
                          jsonObject.put(OSAConstants.PARAMS_PASSWORD, txtPassword.getText().toString());
 
